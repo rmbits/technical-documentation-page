@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Technical Documentation Page</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Python Basics</header>
+        <ul>
+            <li><a href="#7_reasons_to_learn_Python" class="nav-link">7 reasons to learn Python</a></li>
+            <li><a href="#Why_Python_is_Awesome" class="nav-link">Why Python is Awesome</a></li>
+            <li><a href="#Getting_Started" class="nav-link">Getting Started</a></li>
+            <li><a href="#Execute_Python_Scripts" class="nav-link">Execute Python Scripts</a></li>
+            <li><a href="#Variables" class="nav-link">Variables</a></li>
+            <li><a href="#Strings" class="nav-link">Strings</a></li>
+            <li><a href="#Replace" class="nav-link">Replace</a></li>
+            <li><a href="#Join" class="nav-link">Join</a></li>
+            <li><a href="#Split" class="nav-link">Split</a></li>
+            <li><a href="#Keyboard_input" class="nav-link">Keyboard input</a></li>
+            <li><a href="#For_Loops" class="nav-link">For Loops</a></li>
+            <li><a href="#Functions" class="nav-link">Functions</a></li>
+            <li><a href="#List" class="nav-link">List</a></li>
+            <li><a href="#List_operations" class="nav-link">List operations</a></li>
+            <li><a href="#Read_file" class="nav-link">Read file</a></li>
+            <li><a href="#Write_file" class="nav-link">Write file</a></li>
+            <li><a href="#Slices" class="nav-link">Slices</a></li>
+            <li><a href="#Scope" class="nav-link">Scope</a></li>
+            <li><a href="#Try_exception" class="nav-link">Try exception</a></li>
+            <li><a href="#Class" class="nav-link">Class</a></li>
+            <li><a href="#Constructor" class="nav-link">Constructor</a></li>
+            <li><a href="#Modules" class="nav-link">Modules</a></li>
+            <li><a href="#Inheritance" class="nav-link">Inheritance</a></li>
+            <li><a href="#Class_method" class="nav-link">Class method</a></li>
+            <li><a href="#Reference" class="nav-link">Reference</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="7_reasons_to_learn_Python">
+            <header>7 reasons to learn Python</header>
+            <p>
+                Python is described as an interpreted and dynamic programming language with a focus on code readability.
+                Have fewer steps to coding than Java or C++.
+                <ul>
+                    <li>Data is the base in this subject, doesn’t matter what field you want to be in, it’s going to be
+                        there. Python is one of the commonly used programming languages for Data Science and Machine
+                        Learning. Considering the growing Machine Learning is having, you should give it a try.</li>
+                    <li>Data Science — including machine learning, data analysis, and data visualization —, Web
+                        Development and Scripting are the three main applications of Python. If that was not enough,
+                        applications have diversified in software development companies, such as games, frameworks and
+                        web applications, language development, prototyping, graphic design applications and more.</li>
+                    <li>Python provides libraries that include the areas like string operations, Internet, web service
+                        tools, operating system interfaces and protocols. Python Package Index includes more than 85,000
+                        modules and scripts to be used.</li>
+                    <li>For more than 20 years, Python has been cross-platform and open source. You can code on Linux,
+                        Windows and Mac OS.</li>
+                    <li>CPython to work with C programming language, Jython for Python integrated with Java, IronPython
+                        is the compatibility with .NET and C#, PyObjc is Python written with ObjectiveC toolkits and
+                        RubyPython the version combined with Ruby.</li>
+                    <li>Python lets you build more functions with less code, for example you can build a rudimentary
+                        game in two days.</li>
+                    <li>First, Python is getting to be the major programming language, so it’s a benefit know to work
+                        with it. Second, developers who works with Data Science, Machine learning and web development
+                        are one of the highest paid.</li>
+                </ul>
+            </p>
+        </section>
+        <section class="main-section" id="Why_Python_is_Awesome">
+            <header>Why Python is Awesome</header>
+            <p>It can be used for the programming of the front end (client side) with which users interact and back end
+                (server side) database of your website. It can be used for numerical and data analysis for scientific
+                study and research. It can be used to develop artificial intelligence. It can be used to develop both
+                online and offline applications from productivity tools, games and other type of app you can think off.
+            </p>
+        </section>
+        <section class="main-section" id="Getting_Started">
+            <header>Getting started</header>
+            <p>To run Python programs, you will need the Python interpreter and possibly a graphical editor.
+                A Python interpreter executes Python code (sometimes called programs).
+
+                You can download the Python interpreter here: https://www.python.org/downloads/ Once you have a Python
+                interpreter installed, continue with this tutorial.
+
+                To run the code, open a terminal and launch:</p>
+            <code>python file.py</code>
+            <h3>Python IDE</h3>
+            <p>An IDE is a development environment. If you don’t want to work from the terminal, you can use an IDE.
+                This is a graphical editor in which you can type code, work with multiple files, run code amongst other
+                things.</p>
+        </section>
+        <section class="main-section" id="Execute_Python_Scripts">
+            <header>Execute Python scripts</header>
+            <p>Execute Python scripts in the terminal or an IDE. Python files have the .py extension. Whenever you make
+                a Python script, save it as name.py
+
+                A simple program (hello.py) is shown below. The first line indicates that we want to use the Python
+                interpreter. The 3rd line outputs a line of text “hello wlrd” to the screen.
+
+                The text below can be copied into a text editor and save as hello.py. Python works with files that end
+                in .py.</p>
+            <code>#!/usr/bin/env python3
+                print('hello world')
+            </code>
+        </section>
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <p>Python supports different types of variables (datatypes) such as whole numbers, floating point numbers
+                and text.
+
+                You do not need to specify the datatype of a variable, you can simply assign any value to a variable.
+                Type the program below and start it.
+                The example below shows you several variables. These can be assigned as you wish. Once defined you can
+                print them or use arithmetics.</p>
+            <code>#!/usr/bin/python
+
+                x = 3 # a whole number
+                f = 3.1415926 # a floating point number
+                name = "Python" # a string
+
+                print(x)
+                print(f)
+                print(name)
+
+                combination = name + " " + name
+                print(combination)
+
+                sum = f + f
+                print(sum)
+            </code>
+        </section>
+        <section class="main-section" id="Strings">
+            <header>Strings</header>
+            <p>Any time you want to use text in Python, you are using strings. Python understands you want to use a
+                string if you use the double-quotes symbol.
+
+                Once a string is created, you can simply print the string variable directly. You can access characters
+                using block quotes.</p>
+            <p>
+                Variables can be of the string data type. They can hold characters or text.
+                If you create string variable x. You can show it on the screen using the print() function.
+            </p>
+            <code>x = "Hello"
+                print(x)
+            </code>
+        </section>
+        <section class="main-section" id="Replace">
+            <header>Replace</header>
+            <p>Python has builtin support for string replacement. A string is a variable that contains text data.
+                Can call the string.replace(old, new) method using the string object. This article demonstrates the
+                replace method.
+
+                Try the program below:
+            </p>
+            <code>s = "Hello World"
+                s = s.replace("World","Universe")
+                print(s)
+            </code>
+        </section>
+        <section class="main-section" id="Join">
+            <header>Join</header>
+            <p>The join(sequence) method joins elements and returns the combined string. The join methods combines every
+                element of the sequence.
+                The join method takes a sequence as argument. The sequence is written as single argument: you need to
+                add brackets around the sequence.
+
+                If you’d like, you can pass a variable holding the sequence as argument. This makes it easier to read.
+                We’ll use a space a seperator string in the example below.
+
+                Try the program below:
+            </p>
+            <code># define strings
+                firstname = "Bugs"
+                lastname = "Bunny"
+
+                # define our sequence
+                sequence = (firstname,lastname)
+
+                # join into new string
+                name = " ".join(sequence)
+                print(name)
+            </code>
+        </section>
+        <section class="main-section" id="Split">
+            <header>Split</header>
+            <P>A string can be split into substrings using the split(param) method. This method is part of the string
+                object. The parameter is optional, but you can split on a specific string or character.
+                If you have a string, you can subdivide it into several strings. The string needs to have at least one
+                separating character, which may be a space.
+
+                By default the split method will use space as separator. Calling the method will return a list of all
+                the substrings.
+            </P>
+            <code>s = "Its to easy"
+                words = s.split()
+                print(words)
+            </code>
+        </section>
+        <section class="main-section" id="Keyboard_input">
+            <header>Keyboard input</header>
+            <p>In Python and many other programming languages you can get user input. Do not worry, you do not need to
+                write a keyboard driver.
+
+                The input() function will ask keyboard input from the user. If you are still using Python 2, you have
+                the function raw_input().
+                The input function prompts text if a parameter is given. The functions reads input from the keyboard,
+                converts it to a string and removes the newline (Enter).
+
+                Type and experiment with the script below (save as key.py)
+            </p>
+            <code>#!/usr/bin/env python3
+
+                name = input('What is your name? ')
+                print('Hello ' + name)
+
+                job = input('What is your job? ')
+                print('Your job is ' + job)
+
+                num = input('Give me a number? ')
+                print('You said: ' + str(num))
+            </code>
+        </section>
+        <section class="main-section" id="For_Loops">
+            <header>For Loops</header>
+            <p>Programs sometimes need to repeat actions. To repeat actions we can use a for loop.
+                A for loop is written inside the code. A for loop can have 1 or more instructions.
+
+                A for loop will repeat a code block. Repeation is continued until the stop condition is met. If the stop
+                condition is not met it will loop infintely.
+
+                These instructions (loop) is repeated until a condition is met.
+            </p>
+            <code>#!/usr/bin/env python3
+
+                city = ['Tokyo','New York','Toronto','Hong Kong']
+                print('Cities loop:')
+                for x in city:
+                print('City: ' + x)
+
+                print('\n') # newline
+
+                num = [1,2,3,4,5,6,7,8,9]
+                print('x^2 loop:')
+                for x in num:
+                y = x * x
+                print(str(x) + '*' + str(x) + '=' + str(y))
+            </code>
+        </section>
+        <section class="main-section" id="Functions">
+            <header>Functions</header>
+            <p>To group sets of code you can use functions. Functions are small parts of repeatable code.
+                A function accepts parameters.
+
+                Without functions we only have a long list of instructions. Functions can help you organize code.
+                Functions can also be reused, often they are included in modules.
+                Functions can be seen as executable code blocks. A function can be used once or more.
+
+                A simple example of a function is:</p>
+            <code>def currentYear():
+                print('2018')
+
+                currentYear()
+            </code>
+        </section>
+        <section class="main-section" id="List">
+            <header>List</header>
+            <p>List can be seen as a collection: they can hold many variables. List resemble physical lists, they can
+                contain a number of items.
+
+                A list can have any number of elements. They are similar to arrays in other programming languages. Lists
+                can hold all kinds of variables: integers (whole numbers), floats, characters, texts and many more.</p>
+            <code>list = []
+
+                ratings = [ 3,4,6,3,4,6,5 ]
+            </code>
+        </section>
+        <section class="main-section" id="List_operations">
+            <header>List operations</header>
+            <p>To add items to a list, you can use the append() method. Call the method on the list, the parameter
+                contains the item to add. Calling append(3) would add 3 to the list. To remove an item from the end of
+                the list, you can use the pop() method.</p>
+            <code>x = [3,4,5]
+                x.append(6)
+                print(x)
+                x.append(7)
+                print(x)
+                x.pop()
+                print(x)
+            </code>
+        </section>
+        <section class="main-section" id="Read_file">
+            <header>Read file</header>
+            <p>Reading files is part of the Python standard library. This means you do not have to include any module.
+
+                There are two ways to read files:
+
+                line by line
+                read block
+            </p>
+            <h3>Line by line</h3>
+            <code>#!/usr/bin/env python
+
+                filename = "file.py"
+
+                with open(filename) as f:
+                content = f.readlines()
+
+                print(content)
+            </code>
+            <h3>Read block</h3>
+            <code>#!/usr/bin/env python
+
+                filename = "file.py"
+
+                infile = open(filename, 'r')
+                data = infile.read()
+                infile.close()
+
+                print(data)</code>
+        </section>
+        <section class="main-section" id="Write_file">
+            <header>Write file</header>
+            <p>Write file functionality is part of the standard module, you don’t need to include any modules.
+
+                Writing files and appending to a file are different in the Python language.
+                You can open a file for writing using the line</p>
+            <code>f = open("test.txt","w")
+            </code>
+            <p>to append to a file use:</p>
+            <code>f = open("test.txt","a")
+            </code>
+        </section>
+        <section class="main-section" id="Slices">
+            <header>Slices</header>
+        </section>
+        <section class="main-section" id="Scope">
+            <header>Scope</header>
+            <p>Variables have a certain reach within a program. A global variable can be used anywhere in a program, but
+                a local variable is known only in a certain area (function, loop)
+
+                Sometimes the word scope is used in projects: “its outside the scope of the project”, meaning not
+                included. Likewise, a variable can be outside the scope of a function.
+                Scope has to do with where a variable can be used. If you define a variable, it’s not necessarily usable
+                everywhere in the code. A variable defined in a function is only known in a function, unless you return
+                it.</p>
+            <code>def something():
+                localVar = 1
+
+                # this will crash because localVar is a local variable
+                print(localVar)</code>
+            <p>In the program below, balance is a global variable. It can be used anywhere in the code. But the variable
+                x can only be used inside addAmount.</p>
+            <code>#!/usr/bin/env python3
+
+                balance = 0
+
+                def addAmount(x):
+                global balance
+                balance = balance + x
+
+                addAmount(5)
+                print(balance)</code>
+        </section>
+        <section class="main-section" id="Try_exception">
+            <header>Try exception</header>
+            <p>The try except statement can handle exceptions. Exceptions may happen when you run a program.
+
+                Exceptions are errors that happen during execution of the program. Python won’t tell you about errors
+                like syntax errors (grammar faults), instead it will abruptly stop.
+
+                An abrupt exit is bad for both the end user and developer.
+
+                Instead of an emergency halt, you can use a try except statement to properly deal with the problem. An
+                emergency halt will happen if you do not properly handle exceptions.</p>
+            <code>try:
+                1 / 0
+                except ZeroDivisionError:
+                print('Divided by zero')
+
+                print('Should reach here')</code>
+        </section>
+        <section class="main-section" id="Class">
+            <header>Class</header>
+            <p>Python class is concept of “object oriented programming”. Python is an object oriented programming
+                language (oop). OOP is a way to build software.
+
+                With OOP you can make your program much more organized, scalable, reusable and extensible. The OOP
+                concept can be a bit weird. It can be challenging to grasp, but it’s a very powerful concept.
+                Lets create a theoritcal example, we create an object dog. Creating an object is just one line of code:
+            </p>
+            <code>obj1 = dog()</code>
+            <p>Each object can have variables. The values of those variables are unique to the object. We set object
+                variables (name,age)</p>
+            <code>obj1.name = "Woof"
+                obj1.age = 5</code>
+            <p>If methods exist for an object, they can be called. The objects unique variables can be used in those
+                methods.
+                The methods can be used multiple times:</p>
+            <code>obj1.bark()
+                obj1.bark()
+            </code>
+        </section>
+        <section class="main-section" id="Constructor">
+            <header>Constructor</header>
+            <p>The constructor is a method that is called when an object is created. This method is defined in the class
+                and can be used to initialize basic variables.
+
+                If you create four objects, the class constructor is called four times. Every class has a constructor,
+                but its not required to explicitly define it.
+
+                Inside the constructor we initialize two variables: legs and arms. Sometimes variables are named
+                properties in the context of object oriented programming. We create one object (bob) and just by
+                creating it, its variables are initialized.</p>
+            <code>class Human:
+                def __init__(self):
+                self.legs = 2
+                self.arms = 2
+
+                bob = Human()
+                print(bob.legs)</code>
+        </section>
+        <section class="main-section" id="Modules">
+            <header>Modules</header>
+            <p>Modules can have one or more functions. They help you to organize your code. Instead of one long Python
+                file, you can have several files (modules).
+
+                A module is a Python file that has functions or classes. A Python program can use one or more modules.
+                You can load a module with the import keyword.
+
+                In the example below we load the os module. This is short for operating system, so you can do system
+                tasks.
+            </p>
+            <code>import os
+                os.system("dir")</code>
+        </section>
+        <section class="main-section" id="Inheritance">
+            <header>Inheritance</header>
+            <p>Inheritance: A class can get the properties and variables of another class. This class is called the
+                super class or parent class.
+
+                Inheritances saves you from repeating yourself (in coding: dont repeat yourself), you can define methods
+                once and use them in one or more subclasses.
+
+                First we define the super class. The super class is written just like a normal class, there’s nothing
+                special about it except that others will inherit from it. You can give it methods and variables if you
+                want.</p>
+            <code>class App:
+                def start(self):
+                print('starting')
+            </code>
+        </section>
+        <section class="main-section" id="Class_method">
+            <header>Class method</header>
+            <p>A class method is a method that’s shared among all objects. To call a class method, put the class as the
+                first argument.
+
+                Class methods can be can be called from instances and from the class itself. All of these use the same
+                method. The method can use the classes variables and methods.
+
+                The example below defines a class method. The class method can then be used by the class itself. In this
+                example the class method uses the class property name.</p>
+            <code>class Fruit:
+                name = 'Fruitas'
+
+                @classmethod
+                def printName(cls):
+                print('The name is:', cls.name)
+
+                Fruit.printName()</code>
+            <p>You can use a classmethod with both objects and the class:</p>
+            <code>apple = Fruit()
+                berry = Fruit()
+
+                Fruit.printName()
+                apple.printName()
+                berry.printName()
+            </code>
+            <p>The parameter name now belongs to the class, if you’d change the name by using an object it ignores that.
+                But if you’d do that by the class it changes, example below:</p>
+            <code>apple.name="Apple"
+                Fruit.printName()
+                apple.printName()
+                berry.printName()
+
+                Fruit.name="Apple"
+                Fruit.printName()
+                apple.printName()
+                berry.printName()
+            </code>
+        </section>
+
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <p>All the documentation in this page is taken from <a href="https://pythonbasics.org">Python Basics</a>
+            </p>
+        </section>
+    </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
